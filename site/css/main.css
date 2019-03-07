@@ -8,16 +8,14 @@ body{
 .wrapper{
     height: 100vh;
     width: 100vw;
-    background-color: hotpink;
     z-index: 9;
 }
 
 .shadow{
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     transition: 1s;
     z-index: 1;
-    /* background-color: aqua; */
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -30,6 +28,12 @@ ul{
     list-style-type: none;
     position: relative;
     left: -4vw;
+    display: none;
+    transition: 15s;
+}
+
+.ul-activate{
+    display: block;
 }
 
 .shadow-activate{
@@ -44,18 +48,9 @@ ul{
 }
 
 .sidebar{
-    width: 75vw;
-    height: 100vh;
-    background-color: white;
-    position: relative;
-    left: -75vw;
-    top: -5vh;
-    transition: left 0.1s 1s;
-    z-index: 10;
+    display: none;
 }
-.sidebar-activate{
-    left: 0vw;
-}
+
 
 .button{
     display: flex;
@@ -77,7 +72,7 @@ a{
     top: 0.5vh;
     left: 0vw;
     z-index: 1;
-    transition-delay: 0.5s;
+    transition: 1s;
 }
 
 .menu-activate{
@@ -91,6 +86,70 @@ a{
     background-color: black;
     position: relative;
     top: -3.5vh;
-    right: -34.65vh;
+    left: 75%;
     z-index: 1;
 }
+
+.main{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.picture{
+    height: 95vh;
+    width: 100vw;
+    background-image: url("/img/scream.png");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    z-index: 1;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    height: 95vh;
+    width: 100vw;
+    position: absolute;
+    top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.box{
+
+    margin: 25px;
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 5;
+    
+}
+
+p{
+    color: black;
+    display: none;
+    
+}
+
+.box:hover p{
+    display: flex;
+}
+
+.box-active{
+    z-index: 0;
+    display: none;
+}
+
