@@ -225,7 +225,8 @@ h3{
 }
 
 #submitbox{
-    background-color: white;
+    background-color: black;
+    color: white;
 }
 
 .input{
@@ -233,6 +234,8 @@ h3{
     border-width: 3px;
     border-radius: 9px;
     margin: 10px;
+    background-color: black;
+    color: white;
 }
 
 .product{
@@ -255,6 +258,47 @@ h3{
     bottom: 0;
 }
 
+.divide{
+    position: relative;
+    height: 20vh;
+    width: 100vw;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: opacity 0.4s;
+    transition: 0.4s 0.4s;
+}
+
+.productbox{
+
+    margin: 5px;
+    border: 1px solid black;
+    height: 75px;
+    width: 75px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#left{
+    position: relative;
+    left: 40%;
+}
+
+i{
+    color: black;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+   
+}
+
+.prod-active{
+opacity: 0;
+display: none;
+}
 
 
 
