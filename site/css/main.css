@@ -12,6 +12,10 @@ body{
     /* background-color: whitesmoke; */
 }
 
+input{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .shadow{
     height: 100%;
     width: 100vw;
@@ -167,37 +171,89 @@ a{
     z-index: 5;
     opacity: 1;
     transition: opacity 0s 1s;
+    background-position: center;
     
 }
 
 p{
     color: black;
-    display: none;
     
 }
 
 .box-active{
-    /* z-index: 0; */
+
     opacity: 0;
     
 }
 
 #mona-lisa{
-    background-image: url("/img/monalisa.png");
+    background-image: url("../img/monalisa.png");
 }
 
 #jackson-pollock{
-    background-image: url("/img/jacksonpollock.png");
+    background-image: url("../img/jacksonpollock.png");
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-#van-gogh{
-    background-image: url("/img/vangogh.png");
-    background-position: center;
     
 }
 
+#van-gogh{
+    background-image: url("../img/vangogh.png");
+
+    
+}
+
+#starry-night{
+    background-image: url("../img/Starrynight.png");
+    
+}
+
+h1{
+    color: black;
+}
+
+#abouttext{
+    margin: 25px;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#submitbox{
+    background-color: white;
+}
+
+.input{
+    border-color: black;
+    border-width: 3px;
+    border-radius: 9px;
+    margin: 10px;
+}
+
+.product{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 2vh;
+    border: 2px solid black;
+    background-position: center;
+}
+
+#addcart{
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    border-color: black;
+    position: fixed;
+    bottom: 0;
+}
 
 
 
