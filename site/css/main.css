@@ -183,17 +183,17 @@ p{
 }
 
 #mona-lisa{
-    background-image: url("/img/monalisa.png");
+    background-image: url("../img/monalisa.png");
 }
 
 #jackson-pollock{
-    background-image: url("/img/jacksonpollock.png");
+    background-image: url("../img/jacksonpollock.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #van-gogh{
-    background-image: url("/img/vangogh.png");
+    background-image: url("../img/vangogh.png");
     background-position: center;
     
 }
