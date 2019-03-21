@@ -143,7 +143,6 @@ a{
 }
 
 .overlay{
-    background-color: rgba(0,0,0,0.5);
     z-index: 2;
     height: 95vh;
     width: 100vw;
@@ -254,7 +253,7 @@ h3{
     color: white;
     font-size: 1.2rem;
     border-color: black;
-    position: fixed;
+    position: sticky;
     bottom: 0;
 }
 
@@ -269,6 +268,10 @@ h3{
     align-items: center;
     transition: opacity 0.4s;
     transition: 0.4s 0.4s;
+}
+
+#titleheader{
+    display: none;
 }
 
 .productbox{
@@ -300,15 +303,77 @@ opacity: 0;
 display: none;
 }
 
+.bigpicture{
+    height: 550px;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#starryrot{
+    background-image: url("../img/Starrynight90.png");
+}
+
+#monarot{
+    background-image: url("../img/monalisa.png")
+}
+
+#jacksonrot{
+    background-image: url("../img/jacksonpollock\ -\ kopia.png");
+    height: 800px;
+}
+
+#vanrot{
+    background-image: url("../img/vangogh.png")
+}
 
 
 @media only screen and (min-width: 415px) and (min-height: 415px){
+
+    .overlay{
+        display: none;
+    }
+
+    .picture{
+        background-image: url("../img/jacksonpollock.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 15vh;
+        height: 85vh;
+    }
+    
+   
     .button{
         font-size: 2rem;
     }
 
+    .menu{
+        display: none;
+    }
+
+    .sidebar{
+        display: block;
+        height: 7.5vh;
+        width: 100vw;
+        background-color: black;
+        position: fixed;
+        top: 5vh;
+    }
+
+    ul{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -5vh;
+}
+
     a{
         font-size: 2rem;
+        color: white;
+        margin: 0 10px 0 10px;
+        z-index: 1000000;
     }
 
     .main{
