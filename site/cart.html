@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="js/main.js"></script>
+    <div class="wrapper">
+        <div class="shadow">
+            <ul>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+                <a href="shop.html">
+                    <h2>Shop</h2>
+                </a>
+                <a href="about.html">
+                    <h2>About</h2>
+                </a>
+            </ul>
+        </div>
+        <div class="header">
+            <div class="menu button" onclick="doStuff()">Menu</div>
+            <div class="menu button" onclick="doStuff()">Menu</div>
+            <a class="cart button" href="cart.html">Cart</a>
+            
+        </div>
+        
+        <div class="sidebar"></div>
+        <div class="main">
+            <div class="divide prod1">
+                <div class="productbox" id="mona-lisa"></div>
+                <i class="material-icons" onclick="prod1()">
+                        close
+                        </i>
+                <p>Mona Lisa</p>
+                <p id="left">€100 000</p>
+            </div>
+            <div class="divide prod2">
+                    <div class="productbox" id="jackson-pollock"></div>
+                    <i class="material-icons" onclick="prod2()">
+                            close
+                            </i>
+                    <p>No. 2 1459</p>
+                    <p id="left">€100 000</p>
+            </div>
+            <div class="divide prod3">
+                    <div class="productbox" id="van-gogh"></div>
+                    <i class="material-icons" onclick="prod3()">
+                            close
+                            </i>
+                    <p>Mona Lisa</p>
+                    <p id="left">€100 000</p>
+            </div>
+            <div class="divide prod4">
+                    <div class="productbox" id="starry-night"></div>
+                    <i class="material-icons" onclick="prod4()">
+                            close
+                            </i>
+                    <p>Mona Lisa</p>
+                    <p id="left">€100 000</p>
+            </div>
+            
+            
+            
+            <input type="submit" id="addcart" value="Proceed to checkout">
+        </div>
+        
+        
+        
+    </div>
+</body>
+
+</html>
