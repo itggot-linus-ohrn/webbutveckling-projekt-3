@@ -3,6 +3,8 @@ body{
     padding: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
+    height: 100vh;
+    width: 100vw;
 }
 
 .wrapper{
@@ -156,7 +158,7 @@ a{
 
 
 .box{
-
+    
     margin: 25px;
     height: 300px;
     width: 300px;
@@ -180,7 +182,7 @@ p{
 }
 
 .box-active{
-
+    
     opacity: 0;
     
 }
@@ -197,7 +199,7 @@ p{
 
 #van-gogh{
     background-image: url("../img/vangogh.png");
-
+    
     
 }
 
@@ -275,7 +277,7 @@ h3{
 }
 
 .productbox{
-
+    
     margin: 5px;
     border: 1px solid black;
     height: 75px;
@@ -295,12 +297,12 @@ i{
     position: absolute;
     top: 0%;
     right: 0%;
-   
+    
 }
 
 .prod-active{
-opacity: 0;
-display: none;
+    opacity: 0;
+    display: none;
 }
 
 .bigpicture{
@@ -330,17 +332,20 @@ display: none;
 
 
 @media only screen and (min-width: 415px) and (min-height: 415px){
-
+    
     .overlay{
         display: none;
+        
     }
-
+    
     h1{
-        display: block;
+        display: flex;
         position: absolute;
-        top: 10vh;
+        top: -2.5vh;
+        left: 45%;
+        z-index: 100000000;
     }
-
+    
     .picture{
         background-image: url("../img/jacksonpollock.png");
         background-position: center;
@@ -350,47 +355,62 @@ display: none;
         height: 85vh;
     }
     
-   
+    
     .button{
         font-size: 2rem;
     }
-
+    
     .menu{
         display: none;
     }
-
+    
     .sidebar{
         display: block;
-        height: 7.5vh;
-        width: 100vw;
+        height: 100vh;
+        width: 10vw;
         background-color: black;
         position: fixed;
-        top: 5vh;
+        top: 0;
+        z-index: 1000000000000;
+        justify-content: center;
+        /* align-items: center; */
         
     }
-
+    
     ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: -5vh;
-    left: -1vw;
-}
-
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        top: 25%;
+        left: -1vw;;
+    }
+    
     a{
         font-size: 2rem;
         color: white;
         margin: 0 10px 0 10px;
         z-index: 1000000;
     }
-
+    
     .main{
+        height: 95vh;
+        width: 90vw;
         flex-direction: row;
         flex-wrap: wrap;
+        position: relative;
+        top: 15vh;
+        left: 10vw;
+        margin: 0;
+        padding: 0;
+        /* overflow: auto; */
+    }
 
-    position: relative;
-    top: 15vh;
-
+    .box{
+        height: 500px;
+        width: 500px;
+        background-repeat: no-repeat;
+        margin: 100px   
     }
 }
