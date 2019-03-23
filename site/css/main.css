@@ -335,6 +335,12 @@ display: none;
         display: none;
     }
 
+    h1{
+        display: block;
+        position: absolute;
+        top: 10vh;
+    }
+
     .picture{
         background-image: url("../img/jacksonpollock.png");
         background-position: center;
@@ -360,13 +366,16 @@ display: none;
         background-color: black;
         position: fixed;
         top: 5vh;
+        
     }
 
     ul{
     display: flex;
+    align-items: center;
     justify-content: center;
     position: relative;
     top: -5vh;
+    left: -1vw;
 }
 
     a{
@@ -379,6 +388,9 @@ display: none;
     .main{
         flex-direction: row;
         flex-wrap: wrap;
+
+    position: relative;
+    top: 15vh;
 
     }
 }
