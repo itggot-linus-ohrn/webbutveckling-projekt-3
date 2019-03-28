@@ -50,7 +50,7 @@ ul{
 
 .shadow-activate{
     opacity: 1;
-    /* z-index: 11; */
+    z-index: 11;
     pointer-events: auto;
     /* left: 0; */
     /* transition: left 0s 1s; */
@@ -120,6 +120,10 @@ a{
     top: 0.5vh;
     left: 75%;
     z-index: 1;
+}
+
+#titletext{
+    display: none;
 }
 
 .main{
@@ -334,26 +338,45 @@ i{
 
 @media only screen and (min-width: 415px) and (min-height: 415px){
     
+    .wrapper{
+        display: grid;
+        height: 100vh;
+        grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+        grid-template-columns: 10vw auto;
+        grid-template-rows: 5vh auto;
+    }
+
+    .header{
+        grid-area: header;
+        background-color: whitesmoke;
+        z-index: 11;
+    }
+
+
     .overlay{
-        display: none;
-        
+        z-index: 100000;
+        position: absolute;
+        top: 1vh;
+        left: 37.5%;
+        height: 10vh;
+        width: 20vw;
     }
     
     h1{
         display: flex;
-        position: absolute;
-        top: -2.5vh;
-        left: 45%;
-        z-index: 100000000;
+        z-index: 10;
     }
     
     .picture{
         background-image: url("../img/jacksonpollock.png");
         background-position: center;
         background-repeat: no-repeat;
-        position: fixed;
-        top: 15vh;
+        grid-area: main;
+        position: relative;
         height: 85vh;
+        width: 90vw;
     }
     
     
@@ -365,17 +388,17 @@ i{
         display: none;
     }
     
-    .sidebar{
+    .shadow{
+        grid-area: sidebar;
+        pointer-events: all;
         display: block;
+        opacity: 1;
         height: 100vh;
         width: 10vw;
         background-color: black;
-        position: fixed;
-        top: 0;
-        z-index: 1000000000000;
+        z-index: 12;
         justify-content: center;
-        /* align-items: center; */
-        
+
     }
     
     ul{
@@ -392,7 +415,7 @@ i{
         font-size: 2rem;
         color: white;
         margin: 0 10px 0 10px;
-        z-index: 1000000;
+        z-index: 10;
     }
     
     .main{
@@ -400,12 +423,24 @@ i{
         width: 90vw;
         flex-direction: row;
         flex-wrap: wrap;
-        position: relative;
+        /* position: relative;
         top: 15vh;
-        left: 10vw;
+        left: 10vw; */
         margin: 0;
         padding: 0;
         /* overflow: auto; */
+        grid-area: main;
+    }
+
+    #textbox{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
     }
 
     .box{
@@ -416,12 +451,23 @@ i{
     }
 
     #checkout{
-        width: 85vw;
+        width: 100vw;
+        height: 15vh;
+        border-radius: 0px;
         margin: 0;
+        font-size: 2rem;
     }
 
 
     .divide{
         width: calc(90vw - 2px);
     }
+
+    #submitbox{
+        border-radius: 0px;
+        width: 90vw;
+        height: 10vh;
+        font-size: 2rem
+    }
+
 }
