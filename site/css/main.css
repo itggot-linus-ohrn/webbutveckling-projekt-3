@@ -193,23 +193,23 @@ p{
 }
 
 #mona-lisa{
-    background-image: url("../img/monalisa.png");
+    background-image: url("../img/monalisamobile.png");
 }
 
 #jackson-pollock{
-    background-image: url("../img/jacksonpollock.png");
+    background-image: url("../img/jacksonpollockmobile.png");
     background-repeat: no-repeat;
     
 }
 
 #van-gogh{
-    background-image: url("../img/vangogh.png");
+    background-image: url("../img/vangoghmobile.png");
     
     
 }
 
 #starry-night{
-    background-image: url("../img/Starrynight.png");
+    background-image: url("../img/starrynightmobile.png");
     
 }
 
@@ -277,7 +277,7 @@ h3{
     transition: 0.4s 0.4s;
 }
 
-#titleheader{
+#titletext{
     display: none;
 }
 
@@ -335,6 +335,16 @@ i{
     background-image: url("../img/vangogh.png")
 }
 
+#checkout{
+    position: fixed;
+    bottom: -1.5vh;
+    left: -2.75vw;
+    height: 10vh;
+    width: 100vw;
+    border-radius: 0px;
+    font-size: 1rem;
+}
+
 
 @media only screen and (min-width: 415px) and (min-height: 415px){
     
@@ -356,17 +366,11 @@ i{
 
 
     .overlay{
-        z-index: 100000;
-        position: absolute;
-        top: 1vh;
-        left: 37.5%;
-        height: 10vh;
-        width: 20vw;
+        display: none;
     }
     
     h1{
-        display: flex;
-        z-index: 10;
+        display: none;
     }
     
     .picture{
@@ -419,7 +423,7 @@ i{
     }
     
     .main{
-        height: 95vh;
+        height: 90vh;
         width: 90vw;
         flex-direction: row;
         flex-wrap: wrap;
@@ -456,6 +460,7 @@ i{
         border-radius: 0px;
         margin: 0;
         font-size: 2rem;
+        position: initial;
     }
 
 
@@ -465,9 +470,55 @@ i{
 
     #submitbox{
         border-radius: 0px;
+        position: relative;
+        float: bottom;
+        left: -0.5vw;
         width: 90vw;
         height: 10vh;
         font-size: 2rem
     }
 
+
+    #titletext{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 12;
+    }
+
+    #mona-lisa{
+        background-image: url("../img/monalisa.png");
+    }
+    
+    #jackson-pollock{
+        background-image: url("../img/jacksonpollock.png");
+        background-repeat: no-repeat;
+        
+    }
+    
+    #van-gogh{
+        background-image: url("../img/vangogh.png");
+        
+        
+    }
+    
+    #starry-night{
+        background-image: url("../img/starrynight.png");
+        
+    }
+
+    .product{
+        display: none;
+    }
+
+    #jacksonrot{
+        background-image: url("../img/jacksonpollock.png");
+        height: 60vh;
+    }
+
+    #starryrot{
+        background-image: url("../img/Starrynight.png");
+    }
 }
